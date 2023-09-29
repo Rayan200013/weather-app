@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Small Project</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="./images/weather-favicon.png" type="image/x-icon">
+  </head>
+  <body>
+    <!-- Nav Bar Start -->
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary rounded rayan-navbar"
+      aria-label="Eleventh navbar example"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="./images/logo.png" alt="logo" width="250">
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarsExample09"
+          aria-controls="navbarsExample09"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExample09">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#weather">Weather</a>
+            </li>
+           
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Dropdown</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <form role="search">
+            <input
+              class="form-control"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- Nav Bar End -->
+
+    <!-- banner section start -->
+    <div id="myCarousel" class="carousel slide mb-6 rayan-banner" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+          src="images/weather-app-two.jpg"
+            class="bd-placeholder-img"
+            width="100%"
+            height="680px"
+           
+          >
+        </img>
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1>Example headline.</h1>
+              <p class="opacity-75">
+                Some representative placeholder content for the first slide of
+                the carousel.
+              </p>
+              <p>
+                <a class="btn btn-lg btn-primary" href="#">Sign up today</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+            <img
+            src="images/weather-app-four.jpg"
+              class="bd-placeholder-img"
+              width="100%"
+              height="680px"
+             
+            >
+          </img>
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1>One more for good measure.</h1>
+              <p>
+                Some representative placeholder content for the third slide of
+                this carousel.
+              </p>
+              <p>
+                <a class="btn btn-lg btn-primary" href="#">Browse gallery</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+            <img
+            src="images/weather-app-three.jpg"
+              class="bd-placeholder-img"
+              width="100%"
+              height="680px"
+             
+            >
+          </img>
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1>One more for good measure.</h1>
+              <p>
+                Some representative placeholder content for the third slide of
+                this carousel.
+              </p>
+              <p>
+                <a class="btn btn-lg btn-primary" href="#">Browse gallery</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#myCarousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#myCarousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- Banner Section End -->
+
+    <!-- weather Cards start -->
+      <div class="container mt-5" id="weather">
+        <h1 class="text-center">Lebanon Weather</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="city">Enter a city name in Lebanon:</label>
+                    <input type="text" class="form-control" id="city" placeholder="Beirut">
+                </div>
+                <button class="btn btn-primary" id="getWeather">Get Weather</button>
+            </div>
+        </div>
+        <div class="row mt-4" id="weatherInfo">
+            <!-- Weather data will be displayed here -->
+        </div>
+    </div>
+    <!-- weather Cards End -->
+
+
+    <hr class="featurette-divider">
+
+    <!-- weather two container start -->
+    
+
+    <div class="container col-xxl-8 px-4 py-5" id="about">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img src="./images/aboutus-2.jpg" class="d-block mx-lg-auto img-fluid about-img" alt="Bootstrap Themes" width="700" height="700" loading="lazy">
+          </div>
+          <div class="col-lg-6">
+            <h2 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">About Us</h2>
+            <p class="lead">Welcome to Espelonsi, your trusted source for accurate and up-to-date weather information in Lebanon. At Espelonsi, we are passionate about providing you with the most reliable weather forecasts to help you plan your day with confidence. With a commitment to precision and user-friendly design, our weather application is your go-to companion for staying informed about the ever-changing weather conditions in Lebanon. Whether you're a resident, a traveler, or a business owner, Espelonsi is here to empower you with the weather insights you need. Explore our app and experience weather forecasting like never before.</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">View More</button>
+              <button type="button" class="btn btn-outline-secondary btn-lg px-4">Contact Us</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- weather two container End -->
+
+
+    <!-- footer start -->
+    <div class="container">
+        <footer class="py-3 my-4">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+            <li class="nav-item"><a href="#weather" class="nav-link px-2 text-body-secondary">Weather</a></li>
+            <li class="nav-item"><a href="#about" class="nav-link px-2 text-body-secondary">About Us</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link px-2 text-body-secondary">Coctact Us</a></li>
+            <li class="nav-item"><a href="#faqs" class="nav-link px-2 text-body-secondary">FAQS</a></li>
+          </ul>
+          <p class="text-center text-body-secondary">&copy; 2023 Espelonsi, Inc</p>
+        </footer>
+      </div>
+
+      <!-- footer End -->
+    
+
+
+
+      <!-- Scroll On top start -->
+      <button id="scrollToTopButton" onclick="scrollToTop()">
+        <span class="scroll-icon">&#9650;</span>
+    </button>
+      <!-- Scroll On top End-->
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="app.js"></script> <!-- Your JavaScript file -->
+  
+  </body>
+</html>
